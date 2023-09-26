@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        c=0
+        a={name:"ram",age:23};
+        b={name:"ram",age:23};
+        l1=Object.keys(a).length
+        l2=Object.keys(b).length
+        if(l1==l2)
+        {
+            for(let i of Object.values(a))
+            {
+                for(let j of Object.values(b))
+                {
+                    if(i==j)
+                    {
+                        c++
+                    }
+                }
+            }
+        }
+        if(c==l1)
+        {
+            console.log("true")
+        }
+        else
+        {
+            console.log("false")
+        }
+
+    </script>
+</body>
+</html>
